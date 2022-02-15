@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musify | Play some good music</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="section_1">
+        <header class="header">
+          <p>Musify</p>
+        </header>
+        <div class="audios">
+          <div class="audio">
+            <div class="audio_img">
+              <img src="./thumbnails/Jab-Tak.jpg" />
+            </div>
+            <div class="audio_detail">
+              <h1 class="audio_title">Jab-Tak</h1>
+              <button class="btn" onclick="playAudio(1)">Play</button>
+            </div>
+          </div>
+          <div class="audio">
+            <div class="audio_img">
+              <img src="./thumbnails/khairiyat.jpg" />
+            </div>
+            <div class="audio_detail">
+              <h1 class="audio_title">khairiyat</h1>
+              <button class="btn" onclick="playAudio(2)">Play</button>
+            </div>
+          </div>
+          <div class="audio">
+            <div class="audio_img">
+              <img src="./thumbnails/Lae-Dooba.jpg" />
+            </div>
+            <div class="audio_detail">
+              <h1 class="audio_title">Lae Dooba</h1>
+              <button class="btn" onclick="playAudio(3)">Play</button>
+            </div>
+          </div>
+          <div class="audio">
+            <div class="audio_img">
+              <img src="./thumbnails/makhana.jpg" />
+            </div>
+            <div class="audio_detail">
+              <h1 class="audio_title">Makhana</h1>
+              <button class="btn" onclick="playAudio(4)">Play</button>
+            </div>
+          </div>
+          <div class="audio">
+            <div class="audio_img">
+              <img src="./thumbnails/sukoon-mila.jpg" />
+            </div>
+            <div class="audio_detail">
+              <h1 class="audio_title">Sukoon Mila</h1>
+              <button class="btn" onclick="playAudio(5)">Play</button>
+            </div>
+          </div>
+          <div class="audio">
+            <div class="audio_img">
+              <img src="./thumbnails/shape.png" />
+            </div>
+            <div class="audio_detail">
+              <h1 class="audio_title">Shape of You</h1>
+              <button class="btn" onclick="playAudio(6)">Play</button>
+            </div>
+          </div>
+          <div class="audio">
+            <div class="audio_img">
+              <img src="./thumbnails/Love Me Like You Do.jpg" />
+            </div>
+            <div class="audio_detail">
+              <h1 class="audio_title">💖MeLikeYouDo</h1>
+              <button class="btn" onclick="playAudio(7)">Play</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 2 -->
+      <div class="section_2">
+        <div class="thumbnail">
+          <img id="thumbnail" src="./thumbnails/Jab-Tak.jpg" />
+        </div>
+        <audio
+          id="audio_player"
+          class="audio_player"
+          src="./audio/JAB TAK Full Video _ M.S. DHONI -THE UNTOLD STORY _ Armaan Malik, Amaal Mallik _Sushant Singh Rajput.mp3"
+          controls
+        ></audio>
+        <h1 class="audio_player_title" id="audio_player_title">Jab-Tak</h1>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

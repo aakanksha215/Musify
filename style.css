@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+}
+.section_1 {
+  width: 70%;
+  height: 100vh;
+  /* background-color: red; */
+}
+.header {
+  width: 100%;
+  height: 150px;
+  /* background-color: rgb(65, 61, 70); */
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-left: 50px;
+  color: white;
+}
+.audios {
+  height: 600px;
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  column-gap: calc(4% / 3);
+  row-gap: 20px;
+}
+.audio {
+  height: auto;
+  min-height: 400;
+  width: 24%;
+  background-color: rgb(22, 22, 22);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.audio_img {
+  width: 100%;
+  height: 200px;
+  /* background-color: yellow; */
+  overflow: hidden;
+}
+
+.audio_img > img {
+  width: 100%;
+  height: 200px;
+}
+.audio_detail {
+  padding: 20px;
+}
+.audio_title {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.btn {
+  padding: 10px 50px;
+  margin-top: 20px;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(185, 86, 9);
+  border: 2px solid rgb(185, 86, 9);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* css for section 2 */
+.section_2 {
+  width: 30%;
+  height: 100vh;
+  background-color: rgb(22, 22, 22);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 350px;
+  background-color: brown;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.thumbnail > img {
+  width: 100%;
+  height: 350px;
+}
+.audio_player {
+  width: 100%;
+}
+.audio_player_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 44px;
+  color: white;
+}
